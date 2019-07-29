@@ -1,2 +1,3 @@
-# hugo_sandbox
-hugo_sandbox
+# Hugo Sandbox
+
+Repo for learning the Hugo framework
