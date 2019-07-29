@@ -6,3 +6,4 @@ theme = "ga-hugo-theme"
     tag = "tags"
     category = "categories"
     mood = "moods"
+enableInlineShortcodes = true
