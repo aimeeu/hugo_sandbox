@@ -1,0 +1,17 @@
+<html>
+<head>
+     <meta charset="UTF-8">
+     <title>New List Template</title>
+</head>
+<body>
+    {{.Content}}
+    <ul>
+
+    {{ range .Pages }}
+      <li>
+        <a href="{{.Permalink}}">{{.Title}}</a>
+      </li>
+    </ul>
+    {{end}}
+</body>
+</html>

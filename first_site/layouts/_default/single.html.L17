@@ -1,0 +1,20 @@
+<h1>Single Template</h1>
+<hr>
+</br>
+
+Permalink {{ .Permalink }}
+</br>
+Front Matter URL {{ .Params.url }}
+</br>
+Page Title: {{ .Title }}
+</br>
+myVar value: {{ .Params.myVar }}
+
+<h2>Define and assign variable in template</h2>
+{{ $myVarName := "aString "}}
+
+<h3>{{ $myVarName }}</h3>
+
+<h2>Text color based on 'color' variable defined in Front Matter</h2>
+
+<p style="color: {{ .Params.color }};">The color of this text is defined in the Front Matter of the page.</p>

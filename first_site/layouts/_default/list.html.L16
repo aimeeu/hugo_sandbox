@@ -1,0 +1,4 @@
+{{ define "main" }}
+    <!-- this is for lesson 16 - base templates and blocks; all comments must be inside "main" or blank page rendered -->
+    this is the list page template
+{{ end }}

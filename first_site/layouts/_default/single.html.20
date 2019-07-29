@@ -1,0 +1,33 @@
+<h1>Single Template</h1>
+<hr>
+</br>
+
+Permalink {{ .Permalink }}
+</br>
+Page Title: {{ .Title }}
+</br>
+
+
+
+<h2>States</h2>
+
+<ul>
+{{ range $.Site.Data.states }}
+    <li>
+        {{.name}}: {{.capital}}
+    </li>
+{{ end }}
+</ul>
+
+<h2>User0123</h2>
+<div>Short Description of {{.Site.Data.User0123.Name}}:
+    <p>{{ index .Site.Data.User0123 "Short Description" | markdownify }}</p></div>
+
+<h2>discography</h2>
+{{ range $.Site.Data.jazz.bass }}
+    <ul>
+        {{ range .discography }}
+            <li>{{ . }}</li>
+        {{ end }}
+    </ul>
+{{ end }}

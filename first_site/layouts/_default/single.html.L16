@@ -1,0 +1,7 @@
+{{ define "main" }}
+    this is the single page template
+    <!-- this is for lesson 16 - base templates and blocks; all comments must be inside "main" or blank page rendered -->
+{{ end }}
+{{ define "footer" }}
+    this is the single page footer
+{{ end }}

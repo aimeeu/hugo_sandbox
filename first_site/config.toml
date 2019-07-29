@@ -1,0 +1,8 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My First Site (Mike Dane Tutorials)"
+theme = "ga-hugo-theme"
+[taxonomies]
+    tag = "tags"
+    category = "categories"
+    mood = "moods"

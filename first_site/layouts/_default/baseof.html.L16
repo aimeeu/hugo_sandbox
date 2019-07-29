@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {{ block "title" . }}
+        {{ end }}
+    </title>
+</head>
+<body>
+    Top of baseof
+    <hr>
+    {{ block "main" . }}
+        <!-- The part of the page that will to differ between templates -->
+    {{ end }}
+    </br>
+    {{ block "footer" . }}
+        <!-- More shared code, perhaps a footer but that can be overridden if need be  -->
+        default footer
+    {{ end }}
+    <hr>
+    Bottom of baseof
+</body>
+</html>

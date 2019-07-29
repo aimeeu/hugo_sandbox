@@ -1,0 +1,35 @@
+<h1>Single Template</h1>
+<hr>
+</br>
+
+Permalink {{ .Permalink }}
+</br>
+Page Title: {{ .Title }}
+</br>
+
+{{ $var1 := "dog"}}
+{{ $var2 := "cat"}}
+var1 = {{ $var1 }} <br>
+var2 = {{ $var2 }} <br>
+
+
+<h2>If and Equality</h2>
+
+if var1 equals var2, print True. Answer:
+<br>
+{{ if eq $var1 $var2 }}
+    True
+{{ else }}
+    False
+{{ end }}
+
+<h2>Range</h2>
+
+{{ $currentPageTitle := .Title }}
+<ul>
+{{ range .Site.Pages }}
+    <li>
+        <a href="{{ .Permalink }}" style="{{ if eq .Title $currentPageTitle }} background-color: yellow; {{ end }}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+</ul>

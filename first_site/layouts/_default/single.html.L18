@@ -1,0 +1,14 @@
+<h1>Single Template</h1>
+<hr>
+</br>
+
+Permalink {{ .Permalink }}
+</br>
+Page Title: {{ .Title }}
+</br>
+
+<h2>Truncate</h2>
+truncate string "this is a really really long string" to 10 characters: {{ truncate 10 "this is a really really long string"}}
+
+</br>
+Singularize octopi: {{ singularize "octopi" }}
